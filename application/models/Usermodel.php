@@ -8,7 +8,7 @@ class Usermodel extends CI_Model
 		$uname = htmlentities($this->input->post('uname'));
 		$pwd = $this->input->post('pwd');
 
-		$user = $this->db->get_where('user', array('uname' => $uname))->row();
+		$user = $this->db->get_where('user', array('username' => $uname))->row();
 		if (!$user) {
 			return false;
 			exit();
@@ -36,7 +36,7 @@ class Usermodel extends CI_Model
 	{
 		$uname = htmlentities($this->input->post('uname'));
 
-		$user = $this->db->get_where('user', array('uname' => $uname))->row();
+		$user = $this->db->get_where('user', array('username' => $uname))->row();
 		if ($user->active == "0") {
 			return $user->form_key;
 			exit();
@@ -60,7 +60,7 @@ class Usermodel extends CI_Model
 
 	public function check_verification($key)
 	{
-		$this->db->select('active,email,form_key,uname');
+		$this->db->select('active,email,form_key,username');
 		$this->db->where(array('form_key' => $key));
 		$query = $this->db->from('user');
 		if (!$query) {
@@ -85,7 +85,7 @@ class Usermodel extends CI_Model
 			$this->db->where('form_key', $key);
 			$this->db->update('user');
 
-			$this->db->select('u.id,u.sadmin,u.admin,u.iscmpy,u.cmpyid,u.cmpy,u.uname,u.email,u.mobile,u.active,u.sub,u.website_form,u.form_key');
+			$this->db->select('u.id,u.sadmin,u.admin,u.iscmpy,u.cmpyid,u.cmpy,u.username,u.email,u.mobile,u.active,u.sub,u.website_form,u.form_key');
 			$this->db->from('user u');
 			$this->db->where('u.form_key', $key);
 			$userinfo = $this->db->get()->row();

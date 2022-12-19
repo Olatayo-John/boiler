@@ -1,0 +1,36 @@
+div.btngrp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+button.registerbtn {
+	border-radius: 0;
+	margin-right: auto;
+}
+
+a.loginbtn {
+	margin-top: 5px;
+	color: #8BC34A;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+	div.btngrp {
+		display: flex;
+		flex-direction: column;
+	}
+
+	button.registerbtn {
+		margin: 0;
+	}
+
+	a.loginbtn {
+		text-align: center;
+		margin-top: 5px;
+	}
+}

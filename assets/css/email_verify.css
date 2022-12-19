@@ -1,0 +1,8 @@
+a.rsendcodebtn {
+	text-decoration: none;
+}
+
+a.rsendcodebtn:hover {
+	transform: scale(1.1);
+	transition: transform .2s;
+}

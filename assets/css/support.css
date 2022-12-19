@@ -1,0 +1,54 @@
+i.fas {
+	margin: auto 10px;
+	font-weight: bolder;
+}
+
+i.fab {
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px
+}
+
+i.fa-facebook {
+	color: #3b5998;
+}
+
+i.fa-facebook:hover {
+	border: 1px solid #3b5998;
+	border-radius: 50%;
+	background: #3b5998;
+	color: white;
+}
+
+i.fa-twitter {
+	color: #1da1f2;
+}
+
+i.fa-twitter:hover {
+	border: 1px solid #1da1f2;
+	border-radius: 50%;
+	background: #1da1f2;
+	color: white;
+}
+
+i.fa-linkedin {
+	color: #0077b5;
+}
+
+i.fa-linkedin:hover {
+	border: 1px solid #0077b5;
+	border-radius: 50%;
+	background: #0077b5;
+	color: white;
+}
+
+@media only screen and (max-width: 750px) {
+	div.wrapper {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	div.wrapper_second {
+		margin-top: 100px;
+	}
+}

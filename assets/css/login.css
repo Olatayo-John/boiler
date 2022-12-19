@@ -1,0 +1,32 @@
+body{
+	background-image: url('../../assets/images/nktechi.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+input.form-control{
+	border-radius: 0;
+}
+input.form-control:focus{
+	border-color: #294a63;
+	box-shadow: none;
+}
+.loginbox{
+	padding-top: 50px;
+}
+.loginbtn{
+	background: #294a63;
+	text-transform: uppercase;
+}
+.signup{
+	text-align: right;
+}
+a.signupbtn{
+	color: #294a63;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.signupbtn:hover{
+	transform: scale(9);
+	transition: .3s;
+}

@@ -12,6 +12,10 @@ body {
 .wrapper,#wrapper {
 	padding: 14px;
 }
+.borderDiv,
+.bg-light-custom {
+	border: 1px solid #c5d6de;
+}
 
 h4 {
 	margin: 0 !important;
@@ -56,7 +60,6 @@ input.form-control[readonly]:focus,
 select.form-control[readonly]:focus,
 textarea.form-control[readonly]:focus {
 	border: 1px solid #ced4da;
-	/* border-bottom-color: #294a63; */
 	border-bottom: 2px solid #294a63;
 	box-shadow: none;
 	border-radius: 0;
@@ -66,7 +69,6 @@ input.form-control:valid:focus,
 select.form-control:valid:focus,
 textarea.form-control:valid:focus {
 	border: 1px solid #ced4da;
-	/* border-bottom-color: #294a63; */
 	border-bottom: 2px solid #294a63;
 	box-shadow: none;
 	border-radius: 0;
@@ -76,7 +78,6 @@ input.form-control:invalid:focus,
 select.form-control:invalid:focus,
 textarea.form-control:invalid:focus {
 	border: 1px solid #ced4da;
-	/* border-bottom-color: #dc3545; */
 	border-bottom: 2px solid #dc3545;
 	box-shadow: none;
 	border-radius: 0;
@@ -92,8 +93,7 @@ input.search_user:focus {
 	background-color: transparent !important;
 }
 
-div.form-group span,
-span.company {
+div.form-group span {
 	color: #dc3545;
 	font-weight: bolder;
 }
@@ -109,10 +109,6 @@ span.err,
 	color: #dc3545 !important;
 	font-weight: 500 !important;
 	display: none;
-}
-
-.btn-md {
-	background: #294a63 !important;
 }
 
 span.input-group-text {
@@ -154,11 +150,9 @@ h3._total {
 
 /*  */
 
-.borderDiv,
-.bg-light-custom {
-	border: 1px solid #c5d6de;
-}
 
+
+/* modal close button */
 .modalcloseDiv {
 	display: flex;
 	justify-content: space-between;
@@ -267,12 +261,12 @@ div.alertsuccess,
 
 /* content-div */
 #content {
-	/* margin: 74px 14px 14px 64px; */
 	margin: 60px 0 0 60px;
 	transition: .4s;
 }
 
 /*  */
+
 
 
 /* navbar */
@@ -299,7 +293,6 @@ div.logoimg {
 }
 
 .p_icon {
-	/* color: #294a63; */
 	color: #fff;
 	font-size: 15px;
 }
@@ -307,7 +300,6 @@ div.logoimg {
 div.side-nav {
 	background: #294a63;
 	position: fixed;
-	/* overflow-x: hidden; */
 	left: 0;
 	top: 60px;
 	z-index: 1;
@@ -383,10 +375,6 @@ div ul li.logoutli a.nav-link b {
 /*  */
 
 
-li a i.fas,
-li a i.fab {
-	/* color: white; */
-}
 
 button.menubtn {
 	font-size: 15px;
